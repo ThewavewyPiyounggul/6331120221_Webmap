@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href=https://unpkg.com/leaflet@1.9.3/dist/leaflet.css integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="crossorigin=""/>
+<script src=https://unpkg.com/leaflet@1.9.3/dist/leaflet.js integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+<body>
+<div id="map" style="height: 600px"></div>
+<script>
+   var map = L.map('map').setView([13.996555, 100.668185], 12.3);
+   L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+var marker1 = L.marker([13.989437362756393, 100.61816825342929]).addTo(map);
+marker1.bindPopup("<b>FUTUREPARK RANGSIT</b><br>Pathumthani, Thailand><center><img width='200px'src='img/future.jpg'></center>").openPopup();
+
+var marker2 = L.marker([14.000682593357977, 100.68468073828085]).addTo(map);
+marker2.bindPopup("<b>Market Village</b><br>Pathumthani, Thailand><center><img width='200px'src='img/market.png'></center>").openPopup();
+
+var marker3 = L.marker([13.988683434027719, 100.67485878008137]).addTo(map);
+marker3.bindPopup("<b>Dream World</b><br>Pathumthani, Thailand><center><img width='200px'src='img/dream.png'></center>").openPopup();
+
+var marker4 = L.marker([14.032312400944845, 100.72194063355377]).addTo(map);
+marker4.bindPopup("<b>ศูนย์วิทยาศาสตร์เพื่อการศึกษา ท้องฟ้าจำลอง 2 ปทุมธ</b><br>Pathumthani, Thailand><center><img width='200px'src='img/sci.png'></center>").openPopup();
+
+var marker5 = L.marker([13.999681639867697, 100.67646757378851]).addTo(map);
+marker5.bindPopup("<b>วัดเขียนเขต พระอารามหลวง</b><br>Pathumthani, Thailand><center><img width='200px'src='img/wat.png'></center>").openPopup();
+</script>
+</body>
+</html>*
